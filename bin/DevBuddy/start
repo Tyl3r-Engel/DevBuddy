@@ -1,0 +1,4 @@
+ #!/usr/bin/env ruby
+ require "DevBuddy/cli"
+
+ Lorem::CLI.start

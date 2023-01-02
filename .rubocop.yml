@@ -8,3 +8,27 @@ Style/StringLiteralsInInterpolation:
 
 Layout/LineLength:
   Max: 120
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0.0
+
+#* needs to be false because creates error loop when creating one line unless
+#* check = nil
+#* test = [1,2,3,4,5,6,7,8,9]
+#* unless test.include? 10; check = true end
+Style/IfWithSemicolon:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+# *
+
+Layout/CaseIndentation:
+  IndentOneStep: true
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
